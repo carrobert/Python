@@ -8,15 +8,30 @@ mas dessa vez usando o laço de repetição 'while'.
 
 Como desafio, imprima eles em ordem decrescente (20, 19, 18...)"'''
 
-for i in range(21,1,-1):
-    i = i - 1
+#Imprimir todos os números, exceto 13 (laço 'for_ in range')
+
+for i in range(1,21):
     if i == 13:
         continue
-    print(i,"andar")
+    else:
+        print(i,"andar")
 
-j = 20
-while j < 0:
-    if j == 13:
+#Imprimir todos os números, exceto 13 (laço 'while')
+
+contador = 1
+while contador <= 20:
+    if contador == 13:
+        contador = contador + 1
         continue
-    print(j,"andar")
-    j = j - 1
+    else:
+        print(contador,"andar")
+        contador = contador + 1
+
+#Imprimir todos os números, exceto 13 em ordem decrescente
+
+for i in range(20,0,-1):
+    if i == 13:
+        continue
+    else:
+        print(i,"andar")
+
