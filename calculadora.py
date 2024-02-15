@@ -7,15 +7,17 @@ e o terceiro será a entrada que definirá a operação a ser executada. Conside
 
 Caso seja inserido um número de operação que não exista, o resultado deverá ser 0." '''
 
-def calculadora_dois_numeros (num1, num2, operacao)
-
-if operacao == 1:
-    resultado = num1 + num2
+def calculadora (num1, num2, operacao):
+    if operacao == 1:
+        return num1 + num2
     elif operacao == 2:
-        resultado = num1 - num2
+        return num1 - num2
     elif operacao = 3
-        resutado = num1 * num2
+        return num1 * num2
     elif operacao = 4:
-        resultado = num1 / num2
+        return num1 / num2
+    else:
+        return 0
 
-return resultado
+resultado = calculadora (4, 7, 1)
+print (resultado)
